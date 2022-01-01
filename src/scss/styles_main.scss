@@ -110,7 +110,8 @@
     .main-menu {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-b;
+        align-items: center;
         height: 70px;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
         margin-bottom: 30px;
@@ -118,17 +119,52 @@
         .menu-wrapper {
             display: flex;
             flex-direction: row;
+            justify-content: center;
             align-items: center;
             gap: 10px;
             cursor: pointer;
+            width: 142px;
+            height: 70px;
 
-            .dots {
+            &.bedroom {
+                width: 150px;
+            }
+
+            &.livingroom {
+                width: 160px;
+            }
+
+            &.closet {
+                width: 150px;
+            }
+
+            &.office {
+                width: 190px;
+            }
+
+            &.dots {
+                width: 50px;
+            }
+
+            &:hover {
+                background-color: $main-bg;
+            }
+
+            &:hover .text-default {
+                color: #FFF;
+            }
+
+            &:hover .dots-wrapper .dot {
+                background-color: #FFF;
+            }
+
+            .dots-wrapper {
                 display: flex;
                 flex-direction: column;
                 gap: 5px;
 
                 .dot {
-                    width: 2px;
+                    width: 3px;
                     height: 2px;
                     background-color: #000;
                     border-radius: 50%;
@@ -239,6 +275,7 @@
         margin-top: 35px;
         column-gap: 22px;
         row-gap: 42px;
+        
 
         .bestseller-inner {
             display: flex;
@@ -246,13 +283,16 @@
             justify-content: center;
             align-items: center;
             width: 263px;
+            height: auto;
             padding: 0 20px;
+            background-color: #FFF;
 
             .wishlist-icon {
                 width: 17.5px;
                 height: 15px;
                 margin-left: auto;
                 margin-bottom: 38px;
+                cursor: pointer;
             }
 
             .text-default {
@@ -262,11 +302,13 @@
                     margin-top: 54px;
                     margin-bottom: 6px;
                     font-weight: 500;
+                    cursor: pointer;
                 }
 
                 &.subtitle {
                     font-size: 11px;
                     margin-bottom: 9px;
+                    cursor: pointer;
                 }
 
                 &.price {
@@ -307,6 +349,21 @@
                         margin-bottom: 38px;
                     }
                 }
+            }
+
+            .info {
+                display: none;
+            }
+
+            &:hover {
+                box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.11);
+                height: 488px;
+                transition:all 200ms ease-in-out 0s;
+                transform: scale(1.1);
+            }
+
+            &:hover .info {
+                display: block;
             }
         }
     }
