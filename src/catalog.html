@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/styles_catalog.scss">
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <title>Каталог</title>
+</head>
+
+<body>
+    <body>
+        <header class="header-wrapper">
+            <img class="logo" src="./assets/img/logo.png" alt="logo">
+    
+            <div class="text-default">Главная</div>
+            <div class="text-default">О нас</div>
+            <div class="text-default contact">Контакты</div>
+    
+            <div class="search-wrapper">
+                <img src="./assets/img/search-icon.png" alt="search-icon">
+                <input type="text" placeholder="Поиск" class="text-default search">
+            </div>
+    
+            <div class="contacts">
+                <img src="./assets/img/phone-icon-black.png" alt="phone">
+                <p class="text-default phone">8 (964) 89 99 119</p>
+    
+                <img src="./assets/img/delivery-icon-black.png" alt="delivery">
+                <p class="text-default delivery">Доставка</p>
+            </div>
+    
+            <div class="icons">
+                <img src="./assets/img/wishlist-icon.png" alt="wishlist">
+                <img src="./assets/img/cart-icon.png" alt="cart">
+                <img src="./assets/img/profile-icon.png" alt="profile">
+            </div>
+        </header>
+    
+        <section class="main-wrapper">
+    
+            <div class="main-menu">
+                <div class="menu-wrapper">
+                    <img src="./assets/img/kitchen-icon.svg" alt="kitchen">
+                    <p class="text-default">Кухни</p>
+                </div>
+    
+                <div class="menu-wrapper bedroom">
+                    <img src="./assets/img/bedroom-icon.svg" alt="bedroom">
+                    <p class="text-default">Спальни</p>
+                </div>
+                
+                <div class="menu-wrapper livingroom">
+                    <img src="./assets/img/livingroom-icon.svg" alt="livingroom">
+                    <p class="text-default">Гостинные</p>
+                </div>
+    
+                <div class="menu-wrapper closet">
+                    <img src="./assets/img/closet-icon.svg" alt="closet">
+                    <p class="text-default">Прихожие</p>
+                </div>
+    
+                <div class="menu-wrapper office">
+                    <img src="./assets/img/office-icon.svg" alt="office">
+                    <p class="text-default">Офисная мебель</p>
+                </div>
+    
+                <div class="menu-wrapper">
+                    <img src="./assets/img/childrensroom-icon.svg" alt="childrensroom">
+                    <p class="text-default">Детская</p>
+                </div>
+    
+                <div class="menu-wrapper">
+                    <p class="text-default colortext">Акция</p>
+                </div>
+    
+                <div class="menu-wrapper dots">
+                    <div class="dots-wrapper">
+                        <p class="dot"></p>
+                        <p class="dot"></p>
+                        <p class="dot"></p>
+                    </div>
+                </div>
+            </div>
+    
+            <p class="text-default subtitle">Главная<span class="slash">/</span>Гостинные<span class="slash">/</span>
+                Мягкая мебель<span class="slash">/</span>Диваны</p>
+        </section>
+
+        <section class="catalog-wrapper">
+            <div class="catalog-inner-left">
+                <div>
+                    <h1 class="text-default title">Раздел</h1>
+                    <select class="select-form">
+                        <option class="text-default subtitle">Кухни</option>
+                        <option class="text-default subtitle">Спальни</option>
+                        <option class="text-default subtitle" selected>Гостинные</option>
+                        <option class="text-default subtitle">Прихожие</option>
+                        <option class="text-default subtitle">Офисная мебель</option>
+                        <option class="text-default subtitle">Детская</option>
+                    </select>
+
+                    <select class="select-form">
+                        <option class="text-default subtitle" selected>Мягкая мебель</option>
+                        <option class="text-default subtitle">Стеллажи</option>
+                        <option class="text-default subtitle">Полки</option>
+                        <option class="text-default subtitle">Шкафы</option>
+                        <option class="text-default subtitle">Журнальные столы</option>
+                    </select>
+
+                    <select class="select-form">
+                        <option class="text-default subtitle" selected>Диваны</option>
+                        <option class="text-default subtitle">Кресла</option>
+                        <option class="text-default subtitle">Пуфы и банкетки</option>
+                    </select>
+                </div>
+
+                <div>
+                    <h2 class="text-default title">Цена</h2>
+                    <div class="slider">
+                        <div class="slider-circle left"></div>
+                        <div class="slider-circle right"></div>
+                    </div>
+
+                    <div class="price">
+                        <div class="price-value">2 000 ₽</div>
+                        <div class="price-line"></div>
+                        <div class="price-value">102 000 ₽</div>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="text-default title">Цвет</h2>
+                    
+                    <input class="basic-input" id="pink" type="checkbox">
+                    <label for="pink"></label>
+
+                    <input class="basic-input" id="green" type="checkbox">
+                    <label for="green"></label>
+
+                    <input class="basic-input" id="gray" type="checkbox">
+                    <label for="gray"></label>
+
+                    <input class="basic-input" id="black" type="checkbox">
+                    <label for="black"></label>
+
+                    <input class="basic-input" id="brown" type="checkbox">
+                    <label for="brown"></label>
+
+                    <input class="basic-input" id="light-brown" type="checkbox">
+                    <label for="light-brown"></label>
+                </div>
+
+                <div>
+                    <h2 class="text-default title brand-name">Бренд</h2>
+
+                    <div class="brand-name">
+                        <input class="basic-input" type="checkbox" id="blue-1">
+                        <label for="blue-1" class="text-default checkbox"><p>Динс</p></label>
+                    </div>
+
+                    <div class="brand-name">
+                        <input class="basic-input" type="checkbox" id="blue-2">
+                        <label for="blue-2" class="text-default checkbox custom"><p>Кускен</p></label>
+                    </div>
+
+                    <div class="brand-name">
+                        <input class="basic-input" type="checkbox" id="blue-3">
+                        <label for="blue-3" class="text-default checkbox custom"><p>Эби</p></label>
+                    </div>
+
+                    <div class="brand-name">
+                        <input class="basic-input" type="checkbox" id="blue-4">
+                        <label for="blue-4" class="text-default checkbox custom"><p>Реджио</p></label>
+                    </div>
+
+                    <div class="brand-name">
+                        <input class="basic-input" type="checkbox" id="blue-5">
+                        <label for="blue-5" class="text-default checkbox custom"><p>Сайле</p></label>
+                    </div>
+                </div>
+
+                <h2 class="text-default text">Показать еще</h2>
+            </div>
+
+            <div class="catalog-inner-right">
+
+                <div class="dropdown">
+                    <button class="dropbtn">Сортировать
+                        <div class="menu">
+                            <div class="menu-top-line"></div>
+                            <div class="menu-center-line"></div>
+                            <div class="menu-bottom-line"></div>
+                        </div>
+                    </button>
+                    <div class="dropdown-content">
+                    <a href="#">по убыванию цены</a>
+                    <a href="#">по возрастанию цены</a>
+                    <a href="#">по популярности</a>
+                    </div>
+                </div>
+                
+
+                <div class="catalog-products">
+                    <div class="catalog-inner">
+                        <div class="catalog-inner-product">
+                            <img class="wishlist-icon" src="./assets/img/wishlist-icon.png" alt="wishlist">
+                            <img src="./assets/img/main-bed.png" alt="bed">
+                            <h2 class="text-default title">Шерона Barhat Grey</h2>
+                            <h3 class="text-default subtitle">Двухспальные кровати</h3>
+                            <p class="text-default price">21 990₽</p>
+                        </div>
+
+                        <div class="catalog-inner-product">
+                            <img class="wishlist-icon" src="./assets/img/wishlist-icon.png" alt="wishlist">
+                            <img src="./assets/img/main-buffet.png" alt="buffet">
+                            <h2 class="text-default title">Авиньон-1</h2>
+                            <h3 class="text-default subtitle">Буфеты</h3>
+                            <p class="text-default price">18 990₽</p>
+                        </div>
+
+                        <div class="catalog-inner-product">
+                            <img class="wishlist-icon" src="./assets/img/wishlist-icon.png" alt="wishlist">
+                            <img src="./assets/img/main-dresser-1.png" alt="dresser">
+                            <h2 class="text-default title">Стелла Дуб Сонома</h2>
+                            <h3 class="text-default subtitle">Комоды</h3>
+                            <p class="text-default price">8 990₽</p>
+                        </div>
+                    </div>
+    
+                    <div class="catalog-inner">
+                        <div class="catalog-inner-product">
+                            <img class="wishlist-icon" src="./assets/img/wishlist-icon.png" alt="wishlist">
+                            <img src="./assets/img/main-table.png" alt="table">
+                            <h2 class="text-default title">Бенфлит Grey</h2>
+                            <h3 class="text-default subtitle">Журнальные столы</h3>
+                            <p class="text-default price">7 290₽</p>
+                        </div>
+
+                        <div class="catalog-inner-product">
+                            <img class="wishlist-icon" src="./assets/img/wishlist-icon.png" alt="wishlist">
+                            <img src="./assets/img/main-desk.png" alt="desk">
+                            <h2 class="text-default title">Тиффани Вудлайн Крем</h2>
+                            <h3 class="text-default subtitle">Письменные столы</h3>
+                            <p class="text-default price">10 990₽</p>
+                        </div>
+
+                        <div class="catalog-inner-product">
+                            <img class="wishlist-icon" src="./assets/img/wishlist-icon.png" alt="wishlist">
+                            <img src="./assets/img/main-wardrobe-1.png" alt="wardrobe">
+                            <h2 class="text-default title">Валенсия Beige</h2>
+                            <h3 class="text-default subtitle">Шкафы</h3>
+                            <p class="text-default price">19 990₽</p>
+                        </div>
+                    </div>
+    
+                    <div class="catalog-inner">
+                        <div class="catalog-inner-product">
+                            <img class="wishlist-icon" src="./assets/img/wishlist-icon.png" alt="wishlist">
+                            <img src="./assets/img/main-pink-sofa.png" alt="pink-sofa">
+                            <h2 class="text-default title">Вилли Pink</h2>
+                            <h3 class="text-default subtitle">Детский диван</h3>
+                            <p class="text-default price">21 990₽</p>
+                        </div>
+
+                        <div class="catalog-inner-product">
+                            <img class="wishlist-icon" src="./assets/img/wishlist-icon.png" alt="wishlist">
+                            <img src="./assets/img/main-beige-sofa.png" alt="beige-sofa">
+                            <h2 class="text-default title">Сан-Паулу Velvet Brown</h2>
+                            <h3 class="text-default subtitle">Детский диван</h3>
+                            <p class="text-default price">25 990₽</p>
+                        </div>
+
+                        <div class="catalog-inner-product">
+                            <img class="wishlist-icon" src="./assets/img/wishlist-icon.png" alt="wishlist">
+                            <img src="./assets/img/main-rack-1.png" alt="rack">
+                            <h2 class="text-default title">Валенсия Beige</h2>
+                            <h3 class="text-default subtitle">Стеллажи</h3>
+                            <p class="text-default price">10 990₽</p>
+                        </div>
+                    </div>
+
+                    <div class="catalog-inner">
+                        <div class="catalog-inner-product">
+                            <img class="wishlist-icon" src="./assets/img/wishlist-icon.png" alt="wishlist">
+                            <img src="./assets/img/main-bed.png" alt="bed">
+                            <h2 class="text-default title">Шерона Barhat Grey</h2>
+                            <h3 class="text-default subtitle">Двухспальные кровати</h3>
+                            <p class="text-default price">21 990₽</p>
+                        </div>
+
+                        <div class="catalog-inner-product">
+                            <img class="wishlist-icon" src="./assets/img/wishlist-icon.png" alt="wishlist">
+                            <img src="./assets/img/main-buffet.png" alt="buffet">
+                            <h2 class="text-default title">Авиньон-1</h2>
+                            <h3 class="text-default subtitle">Буфеты</h3>
+                            <p class="text-default price">18 990₽</p>
+                        </div>
+
+                        <div class="catalog-inner-product">
+                            <img class="wishlist-icon" src="./assets/img/wishlist-icon.png" alt="wishlist">
+                            <img src="./assets/img/main-dresser-1.png" alt="dresser">
+                            <h2 class="text-default title">Стелла Дуб Сонома</h2>
+                            <h3 class="text-default subtitle">Комоды</h3>
+                            <p class="text-default price">8 990₽</p>
+                        </div>
+                    </div>
+
+                    <div class="catalog-inner">
+                        <div class="catalog-inner-product">
+                            <img class="wishlist-icon" src="./assets/img/wishlist-icon.png" alt="wishlist">
+                            <img src="./assets/img/main-table.png" alt="table">
+                            <h2 class="text-default title">Бенфлит Grey</h2>
+                            <h3 class="text-default subtitle">Журнальные столы</h3>
+                            <p class="text-default price">7 290₽</p>
+                        </div>
+
+                        <div class="catalog-inner-product">
+                            <img class="wishlist-icon" src="./assets/img/wishlist-icon.png" alt="wishlist">
+                            <img src="./assets/img/main-desk.png" alt="desk">
+                            <h2 class="text-default title">Тиффани Вудлайн Крем</h2>
+                            <h3 class="text-default subtitle">Письменные столы</h3>
+                            <p class="text-default price">10 990₽</p>
+                        </div>
+
+                        <div class="catalog-inner-product">
+                            <img class="wishlist-icon" src="./assets/img/wishlist-icon.png" alt="wishlist">
+                            <img src="./assets/img/main-wardrobe-1.png" alt="wardrobe">
+                            <h2 class="text-default title">Валенсия Beige</h2>
+                            <h3 class="text-default subtitle">Шкафы</h3>
+                            <p class="text-default price">19 990₽</p>
+                        </div>
+                    </div>
+    
+                    <div class="catalog-inner">
+                        <div class="catalog-inner-product">
+                            <img class="wishlist-icon" src="./assets/img/wishlist-icon.png" alt="wishlist">
+                            <img src="./assets/img/main-pink-sofa.png" alt="pink-sofa">
+                            <h2 class="text-default title">Вилли Pink</h2>
+                            <h3 class="text-default subtitle">Детский диван</h3>
+                            <p class="text-default price">21 990₽</p>
+                        </div>
+
+                        <div class="catalog-inner-product">
+                            <img class="wishlist-icon" src="./assets/img/wishlist-icon.png" alt="wishlist">
+                            <img src="./assets/img/main-beige-sofa.png" alt="beige-sofa">
+                            <h2 class="text-default title">Сан-Паулу Velvet Brown</h2>
+                            <h3 class="text-default subtitle">Детский диван</h3>
+                            <p class="text-default price">25 990₽</p>
+                        </div>
+
+                        <div class="catalog-inner-product">
+                            <img class="wishlist-icon" src="./assets/img/wishlist-icon.png" alt="wishlist">
+                            <img src="./assets/img/main-rack-1.png" alt="rack">
+                            <h2 class="text-default title">Валенсия Beige</h2>
+                            <h3 class="text-default subtitle">Стеллажи</h3>
+                            <p class="text-default price">10 990₽</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer-wrapper">
+
+            <div class="navigation text-default">Навигация</div>
+    
+            <div class="footer-container">
+                <div class="footer-wrapper-left">
+                    <div class="text-default">Кухни</div>
+                    <div class="text-default">Спальни</div>
+                    <div class="text-default">Гостинные</div>
+                    <div class="text-default">Прихожие</div>
+                    <div class="text-default">Офисная мебель</div>
+                    <div class="text-default">Детская</div>
+                    <div class="text-default">Шкафы</div>
+                    <div class="text-default">Матрасы</div>
+                    <div class="text-default">Мягкая мебель</div>
+                </div>
+    
+                <div class="footer-wrapper-right">
+                    <h1 class="text-default title">lm</h1>
+                    <h2 class="text-default checkbox">г. Анапа, Анапское шоссе, 30 Ж/К Черное море</h2>
+                </div>
+            </div>
+    
+            <div class="footer-wrapper-bottom">
+    
+                <div class="text-default colortext">Акция</div>
+                <div class="text-default">Новинки</div>
+    
+                <div class="footer-contacts">
+                    <img src="./assets/img/phone-icon-black.png" alt="phone">
+                    <p class="text-default phone">8 (964) 89 99 119</p>
+    
+                    <i class="fab fa-instagram"></i>
+                    <p class="text-default inst">instagram</p>
+    
+                    <i class="far fa-envelope"></i>
+                    <p class="text-default">mebel_loft_anapa@mail.ru</p>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>
