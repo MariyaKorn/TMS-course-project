@@ -41,7 +41,7 @@
 
 .header-wrapper {
     height: 113px;
-    padding: 0 127px 0 130px;
+    padding: 0 130px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -544,6 +544,7 @@
 
                         &.subtitle {
                             font-size: 11px;
+                            color: $primary-text;
                             margin-bottom: 9px;
                             cursor: pointer;
                         }
