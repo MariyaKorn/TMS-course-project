@@ -39,9 +39,11 @@
         cursor: pointer;
     }
 
-    .link {
-        text-decoration: none;
-        color: #fff;
+    button {
+        border: none;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
     }
 
     .contacts {
@@ -74,6 +76,12 @@
         gap: 33px;
         margin-bottom: 20px;
         overflow: hidden;
+
+        button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
 
         .search-wrapper {
             position: relative;
@@ -110,7 +118,7 @@
     .main-menu {
         display: flex;
         flex-direction: row;
-        justify-content: space-b;
+        justify-content: space-between;
         align-items: center;
         height: 70px;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
@@ -154,23 +162,92 @@
                 color: #FFF;
             }
 
-            &:hover .dots-wrapper .dot {
-                background-color: #FFF;
-            }
+            &.dots {
+                .dots-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    padding-top: 10px;
+    
+                    .dropdown {
+                        .dropbtn {
+                            &.text-default {
+                                .dot {
+                                    width: 3px;
+                                    height: 2px;
+                                    background-color: #000;
+                                    border-radius: 50%;
+                                    margin-bottom: 5px;
+                                }
+                            }
+                        }
+    
+                        .dropdown-content {
+                            width: 151px;
+                            height: 189px;
+                            position: absolute;
+                            left: -120px;
+                        }
+                    }
+                }
 
-            .dots-wrapper {
-                display: flex;
-                flex-direction: column;
-                gap: 5px;
-
-                .dot {
-                    width: 3px;
-                    height: 2px;
-                    background-color: #000;
-                    border-radius: 50%;
+                &:hover .dots-wrapper .dropdown .dropbtn .dot {
+                    background-color: #FFF;
                 }
             }
+
+            &:hover .dropdown .dropdown-content {
+                display: block;
+            }
+
+            &:hover path {
+                fill: white;
+            }
+
+            .dropdown {
+                position: relative;
+                display: inline-block;
+
+                button {
+                    background-color: transparent;
+                    border: none;
+                }
             
+                .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #FFF;
+                    width: 189px;
+                    height: 432px;
+                    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);;
+                    z-index: 1;
+                    padding: 25px;
+                    top: 40px;
+                    left: -80px;
+
+                }
+                
+                .dropdown-content a {
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: $primary-text;
+                    text-decoration: none;
+                    display: block;
+                    margin-bottom: 25px;
+                }
+                
+                .dropdown-content a:hover {
+                    color: $main-bg;
+                }
+                
+                &:hover .dropdown-content {
+                    display: block;
+                }
+                
+                .dropdown:hover .dropbtn {
+                    background-color: #FFF;
+                }
+            }
         }
     }
 
@@ -182,7 +259,6 @@
         .text-wrapper {
             display: flex;
             flex-direction: column;
-            width: 280px;
             position: absolute;
             top: 100px;
             left: 120px;
@@ -267,106 +343,111 @@
 .bestsellers {
     padding: 0 120px 0 140px;
 
-    .bestsellers-wrapper{
+    .catalog-products {
         display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        margin-top: 35px;
-        column-gap: 22px;
-        row-gap: 42px;
-        
-
-        .bestseller-inner {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 42px;
+    
+        .catalog-inner {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             justify-content: center;
             align-items: center;
-            width: 263px;
-            height: auto;
-            padding: 0 20px;
-            background-color: #FFF;
-
-            .wishlist-icon {
-                width: 17.5px;
-                height: 15px;
-                margin-left: auto;
-                margin-bottom: 38px;
-                cursor: pointer;
-            }
-
-            .text-default {
-                align-self: flex-start;
-
-                &.title {
-                    margin-top: 54px;
-                    margin-bottom: 6px;
-                    font-weight: 500;
-                    cursor: pointer;
-                }
-
-                &.subtitle {
-                    font-size: 11px;
-                    margin-bottom: 9px;
-                    cursor: pointer;
-                }
-
-                &.price {
-                    font-weight: 500;
-                    margin-bottom: 32px;
-
-                    span {
-                        text-decoration: line-through;
-                        color: #CCCCCC;
-                        font-size: 12px;
-                        font-weight: 500;
-                        margin-left: 6px;
-                    }
-                }
-            }
-
-            .sale-wrapper {
+            gap: 30px;
+    
+            .catalog-inner-product {
                 display: flex;
-                flex-direction: row;
-                justify-content: flex-start;
+                flex-direction: column;
+                justify-content: center;
                 align-items: center;
-                gap: 160px;
-
-                .sale-inner {
-                    display: flex;
-                    flex-direction: row;
-
-                    .sale-icon {
-                        width: 17.5px;
-                        height: 15px;
-                        margin-bottom: 38px;
-                        margin-right: 7px;
+                width: 263px;
+                padding: 20px;
+                background-color: #FFF;
+    
+                .wishlist-icon {
+                    width: 17.5px;
+                    height: 15px;
+                    margin-left: auto;
+                    margin-bottom: 38px;
+                    cursor: pointer;
+                }
+    
+                .text-default {
+                    align-self: flex-start;
+    
+                    &.title {
+                        margin-top: 54px;
+                        margin-bottom: 6px;
+                        font-weight: 500;
+                        cursor: pointer;
                     }
     
-                    .text-default {
-                        font-size: 12px;
-                        color: #000;
-                        margin-bottom: 38px;
+                    &.subtitle {
+                        font-size: 11px;
+                        color: $primary-text;
+                        margin-bottom: 9px;
+                        cursor: pointer;
+                    }
+    
+                    &.price {
+                        font-weight: 500;
+                        margin-bottom: 32px;
+    
+                        span {
+                            text-decoration: line-through;
+                            color: #CCCCCC;
+                            font-size: 12px;
+                            font-weight: 500;
+                            margin-left: 6px;
+                        }
                     }
                 }
-            }
-
-            .info {
-                display: none;
-            }
-
-            &:hover {
-                box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.11);
-                height: 488px;
-                transition:all 200ms ease-in-out 0s;
-                transform: scale(1.1);
-            }
-
-            &:hover .info {
-                display: block;
+    
+                .sale-wrapper {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 160px;
+    
+                    .sale-inner {
+                        display: flex;
+                        flex-direction: row;
+    
+                        .sale-icon {
+                            width: 17.5px;
+                            height: 15px;
+                            margin-bottom: 38px;
+                            margin-right: 7px;
+                        }
+        
+                        .text-default {
+                            font-size: 12px;
+                            color: #000;
+                            margin-bottom: 38px;
+                        }
+                    }
+                }
+    
+                .info {
+                    display: none;
+                }
+    
+                &:hover {
+                    box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.11);
+                    transition:all 200ms ease-in-out 0s;
+                    transform: scale(1.2);
+                    cursor: pointer;
+                }
+    
+                &:hover .info {
+                    display: block;
+                }
             }
         }
-    }
+    }    
 }
 
 .footer-wrapper {
@@ -423,7 +504,7 @@
                     font-weight: 900;
                     color: #000;
                     text-transform: uppercase;
-                    margin-left: auto;
+                    margin-left: 113px;
                     margin-bottom: 20px;
                     cursor: pointer;
                 }
@@ -431,12 +512,14 @@
                 &.subtitle {
                     font-size: 14px;
                     text-align: end;
+                    cursor: pointer;
                 }
             }
 
-            .link {
-                text-decoration: none;
-                color: #000;
+            button {
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
             }
         }
     }

@@ -13,11 +13,29 @@
 <body>
 
     <header class="header-wrapper">
-        <img class="logo" src="./assets/img/logo.png" alt="logo">
+        <form action="./main.html">
+            <button>
+                <img class="logo" src="./assets/img/logo.png" alt="logo">
+            </button>
+        </form>
+        
+        <div>
+            <form action="./main.html">
+                <button class="text-default">Главная</button>
+            </form> 
+        </div>
 
-        <div class="text-default">Главная</div>
-        <div class="text-default">О нас</div>
-        <div class="text-default contact">Контакты</div>
+        <div>
+            <form action="./about.html">
+                <button class="text-default">О нас</button>
+            </form> 
+        </div>
+
+        <div>
+            <form action="./contacts.html">
+                <button class="text-default contact">Контакты</button>
+            </form>
+        </div>
 
         <div class="search-wrapper">
             <img src="./assets/img/search-icon.png" alt="search-icon">
@@ -33,9 +51,23 @@
         </div>
 
         <div class="icons">
-            <img src="./assets/img/wishlist-icon.png" alt="wishlist">
-            <img src="./assets/img/cart-icon.png" alt="cart">
-            <img src="./assets/img/profile-icon.png" alt="profile">
+            <form action="#">
+                <button>
+                    <img src="./assets/img/wishlist-icon.png" alt="wishlist">
+                </button>
+            </form>
+            
+            <form action="./cart.html">
+                <button>
+                    <img src="./assets/img/cart-icon.png" alt="cart">
+                </button>
+            </form>
+            
+            <form action="./profile.html">
+                <button>
+                    <img src="./assets/img/profile-icon.png" alt="profile">
+                </button>
+            </form>
         </div>
     </header>
 
@@ -228,8 +260,17 @@
             </div>
 
             <div class="footer-wrapper-right">
-                <img src="./assets/img/footer-logo.png" alt="logo">
-                <h2 class="text-default subtitle">г. Анапа, Анапское шоссе, 30 Ж/К Черное море</h2>
+                <form action="./main.html">
+                    <button>
+                        <img src="./assets/img/footer-logo.png" alt="logo">
+                    </button>
+                </form>
+                
+                <form action="./contacts.html">
+                    <button>
+                        <h2 class="text-default subtitle">г. Анапа, Анапское шоссе, 30 Ж/К Черное море</h2>
+                    </button>
+                </form>
             </div>
         </div>
 

@@ -56,6 +56,13 @@
         cursor: pointer;
     }
 
+    button {
+        border: none;
+        background-color: transparent;
+        color: $primary-text;
+        cursor: pointer;
+    }
+
     .text-default {
         font-size: 14px;
         margin-right: 30px;
@@ -124,7 +131,7 @@
     .main-menu {
         display: flex;
         flex-direction: row;
-        justify-content: space-b;
+        justify-content: space-between;
         align-items: center;
         height: 70px;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
@@ -145,15 +152,15 @@
             }
 
             &.livingroom {
-                width: 165px;
+                width: 160px;
             }
 
             &.closet {
-                width: 155px;
+                width: 150px;
             }
 
             &.office {
-                width: 195px;
+                width: 190px;
             }
 
             &.dots {
@@ -168,23 +175,92 @@
                 color: #FFF;
             }
 
-            &:hover .dots-wrapper .dot {
-                background-color: #FFF;
-            }
+            &.dots {
+                .dots-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    padding-top: 10px;
+    
+                    .dropdown {
+                        .dropbtn {
+                            &.text-default {
+                                .dot {
+                                    width: 3px;
+                                    height: 2px;
+                                    background-color: #000;
+                                    border-radius: 50%;
+                                    margin-bottom: 5px;
+                                }
+                            }
+                        }
+    
+                        .dropdown-content {
+                            width: 151px;
+                            height: 189px;
+                            position: absolute;
+                            left: -120px;
+                        }
+                    }
+                }
 
-            .dots-wrapper {
-                display: flex;
-                flex-direction: column;
-                gap: 5px;
-
-                .dot {
-                    width: 3px;
-                    height: 2px;
-                    background-color: #000;
-                    border-radius: 50%;
+                &:hover .dots-wrapper .dropdown .dropbtn .dot {
+                    background-color: #FFF;
                 }
             }
+
+            &:hover .dropdown .dropdown-content {
+                display: block;
+            }
+
+            &:hover path {
+                fill: white;
+            }
+
+            .dropdown {
+                position: relative;
+                display: inline-block;
+
+                button {
+                    background-color: transparent;
+                    border: none;
+                }
             
+                .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #FFF;
+                    width: 189px;
+                    height: 432px;
+                    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);;
+                    z-index: 1;
+                    padding: 25px;
+                    top: 40px;
+                    left: -80px;
+
+                }
+                
+                .dropdown-content a {
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: $primary-text;
+                    text-decoration: none;
+                    display: block;
+                    margin-bottom: 25px;
+                }
+                
+                .dropdown-content a:hover {
+                    color: $main-bg;
+                }
+                
+                &:hover .dropdown-content {
+                    display: block;
+                }
+                
+                .dropdown:hover .dropbtn {
+                    background-color: #FFF;
+                }
+            }
         }
     }
 
@@ -493,7 +569,7 @@
                     font-weight: 900;
                     color: #000;
                     text-transform: uppercase;
-                    margin-left: auto;
+                    margin-left: 105px;
                     margin-bottom: 20px;
                     cursor: pointer;
                 }
@@ -504,9 +580,10 @@
                 }
             }
 
-            .link {
-                text-decoration: none;
-                color: #000;
+            button {
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
             }
         }
     }

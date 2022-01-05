@@ -36,7 +36,7 @@
 
 .header-wrapper {
     height: 113px;
-    padding: 0 127px 0 135px;
+    padding: 0 134px 0 127px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -61,6 +61,13 @@
         &.contact {
             margin-right: 40px;
         }
+    }
+
+    button {
+        border: none;
+        background-color: transparent;
+        color: $primary-text;
+        cursor: pointer;
     }
 
     .search-wrapper {
@@ -393,15 +400,16 @@
                 }
             }
 
-            .link {
-                text-decoration: none;
-                color: #000;
+            button {
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
             }
 
             img {
                 width: 30px;
                 height: 30px;
-                margin-left: auto;
+                margin-left: 140px;
                 margin-bottom: 30px;
             }
         }
