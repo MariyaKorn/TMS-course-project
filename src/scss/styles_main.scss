@@ -356,6 +356,12 @@
             justify-content: center;
             align-items: center;
             gap: 30px;
+
+            button {
+                border: none;
+                background: transparent;
+                cursor: pointer;
+            }
     
             .catalog-inner-product {
                 display: flex;

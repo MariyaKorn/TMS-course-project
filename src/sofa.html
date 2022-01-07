@@ -5,70 +5,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./scss/styles_main.scss">
+    <link rel="stylesheet" href="./scss/styles_sofa.scss">
     <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.css">
-    <title>Loft Mebel</title>
+    <title>Динс Velvet Yellow</title>
 </head>
 
 <body>
-
     <header class="header-wrapper">
+        <form action="./main.html">
+            <button>
+                <img class="logo" src="./assets/img/logo.png" alt="logo">
+            </button>
+        </form>
         
         <div>
             <form action="./main.html">
-                <button class="text-default" >Главная</button>
-            </form>
+                <button class="text-default">Главная</button>
+            </form> 
         </div>
 
         <div>
             <form action="./about.html">
                 <button class="text-default">О нас</button>
-            </form>
+            </form> 
         </div>
 
         <div>
             <form action="./contacts.html">
-                <button class="text-default">Контакты</button>
+                <button class="text-default contact">Контакты</button>
             </form>
         </div>
 
+        <div class="search-wrapper">
+            <img src="./assets/img/search-icon.png" alt="search-icon">
+            <input type="text" placeholder="Поиск" class="text-default search">
+        </div>
+
         <div class="contacts">
-            <img src="./assets/img/phone-icon.png" alt="phone">
+            <img src="./assets/img/phone-icon-black.png" alt="phone">
             <p class="text-default phone">8 (964) 89 99 119</p>
 
-            <img src="./assets/img/delivery-icon.png" alt="delivery">
-            <p class="text-default">Доставка</p>
+            <img src="./assets/img/delivery-icon-black.png" alt="delivery">
+            <p class="text-default delivery">Доставка</p>
+        </div>
+
+        <div class="icons">
+            <form action="#">
+                <button>
+                    <img src="./assets/img/wishlist-icon.png" alt="wishlist">
+                </button>
+            </form>
+            
+            <form action="./cart.html">
+                <button>
+                    <img src="./assets/img/cart-icon.png" alt="cart">
+                </button>
+            </form>
+            
+            <form action="./profile.html">
+                <button>
+                    <img src="./assets/img/profile-icon.png" alt="profile">
+                </button>
+            </form>
         </div>
     </header>
 
     <section class="main-wrapper">
-
-        <div class="main-logo-menu">
-            <form action="./main.html">
-                <button>
-                    <img src="./assets/img/logo.png" alt="logo">
-                </button>
-            </form>
-            
-            <div class="search-wrapper">
-                <img src="./assets/img/search-icon.png" alt="search-icon">
-                <input type="text" placeholder="Поиск" class="text-default search">
-            </div>
-            
-            <div class="icons">
-                <form action="#">
-                    <button><img src="./assets/img/wishlist-icon.png" alt="wishlist"></button>
-                </form>
-                
-                <form action="./cart.html">
-                    <button><img src="./assets/img/cart-icon.png" alt="cart"></button>
-                </form>
-
-                <form action="./profile.html">
-                    <button><img src="./assets/img/profile-icon.png" alt="profile"></button>
-                </form>
-            </div>
-        </div>
 
         <div class="main-menu">
             <div class="menu-wrapper">
@@ -81,8 +83,7 @@
                     <path d="M2.875 8.625H1.4375V10.0625H2.875V8.625Z" fill="black"/>
                     <path d="M6.46875 8.625H5.03125V10.0625H6.46875V8.625Z" fill="black"/>
                     <path d="M10.0625 8.625H8.625V10.0625H10.0625V8.625Z" fill="black"/>
-                    </svg>
-                    
+                    </svg>                    
                     
                 <div class="dropdown">
                     <button class="dropbtn text-default">Кухни</button>
@@ -148,6 +149,7 @@
                     <path d="M14.5345 15.5512C14.8904 15.5512 15.179 15.2626 15.179 14.9067V12.3286C15.179 11.9726 14.8904 11.6841 14.5345 11.6841C14.1785 11.6841 13.8899 11.9726 13.8899 12.3286V14.9067C13.8899 15.2626 14.1785 15.5512 14.5345 15.5512Z" fill="black"/>
                     <path d="M17.1125 15.5512C17.4685 15.5512 17.757 15.2626 17.757 14.9067V12.3286C17.757 11.9726 17.4685 11.6841 17.1125 11.6841C16.7566 11.6841 16.468 11.9726 16.468 12.3286V14.9067C16.468 15.2626 16.7566 15.5512 17.1125 15.5512Z" fill="black"/>
                     </svg>
+                    
                 <p class="text-default">Детская</p>
             </div>
 
@@ -174,329 +176,70 @@
                 </div>
             </div>
         </div>
-        
-        <div class="main-banner">
-            <img src="./assets/img/main-banner.png" alt="main-banner">
 
-            <div class="arrow left"></div>
-            
-            <div class="text-wrapper">
-                <h1>loft <br> мебель</h1>
-                <h2>Современная и удобная мебель в Анапе</h2>
-                <form action="./catalog.html">
-                    <button>Смотреть каталог</button>
-                </form>
-            </div>
-
-            <div class="arrow right"></div>
-        </div>
+        <p class="text-default subtitle">Главная<span class="slash">/</span>Гостинные<span class="slash">/</span>
+            Мягкая мебель<span class="slash">/</span>Диваны</p>
     </section>
 
-    <section class="bestsellers">
-        <div class="text-default">Хиты продаж</div>
+    <section class="product-wrapper">
 
-        <div class="catalog-products">
-            <div class="catalog-inner">
-                <div class="catalog-inner-product">
-                    <img class="wishlist-icon" src="./assets/img/wishlist-icon.png" alt="wishlist">
-                    <img src="./assets/img/main-chair-1.png" alt="chair">
-                    <h2 class="text-default title">Валенсия Beige</h2>
-                    <h3 class="text-default subtitle">Барные стулья</h3>
-                    <p class="text-default price">2 300₽</p>
+        <div class="product-wrapper-left">
+            <img class="yellow-sofa" src="./assets/img/sofa-yellow-sofa.png" alt="yellow-sofa">
+            <div class="product-images">
+                <div class="product-images-mini">
+                    <div class="arrow left"></div>
+                    <div class="back first"></div>
+                    <div class="back second"></div>
+                    <div class="back third"></div>
+                    <div class="back fourth"></div>
+                    <div class="back fifth"></div>
+                    <div class="arrow right"></div>
                 </div>
-        
-                <div class="catalog-inner-product">
-                    <img class="wishlist-icon" src="./assets/img/wishlist-icon.png" alt="wishlist">
-                    <img src="./assets/img/main-chair-2.png" alt="chair">
-                    <h2 class="text-default title">Толикс-2 White Gloss</h2>
-                    <h3 class="text-default subtitle">Барные стулья</h3>
-                    <p class="text-default price">4 690₽</p>
-                    <!-- <div class="info">
-                        <p>Размеры</p>
-                        <button>Добавить в корзину</button>
-                    </div> -->
-                </div>
-                
-                <form action="./sofa.html">
-                    <button class="button">
-                        <div class="catalog-inner-product">
-                            <div class="sale-wrapper">
-                                <div class="sale-inner">
-                                    <img class="sale-icon" src="./assets/img/sale-red-icon.png" alt="sale">
-                                    <span class="text-default">-25%</span>
-                                </div>
-                                
-                                <img class="wishlist-icon" src="./assets/img/wishlist-icon.png" alt="wishlist">
-                            </div>
+            </div>
+        </div>
 
-                            <img src="./assets/img/main-yellow-sofa.png" alt="yellow-sofa">
-                            <h2 class="text-default title">Динс Velvet Yellow</h2>
-                            <h3 class="text-default subtitle">Диваны</h3>
-                            <p class="text-default price">28 490₽<span>37 990₽</span></p>
-                        </div>
-                    </button>
-                </form>
-                
-                <div class="catalog-inner-product">
-                    <img class="wishlist-icon" src="./assets/img/wishlist-icon.png" alt="wishlist">
-                    <img src="./assets/img/main-blue-sofa.png" alt="blue-sofa">
-                    <h2 class="text-default title">Кускен Navy Blue</h2>
-                    <h3 class="text-default subtitle">Диваны</h3>
-                    <p class="text-default price">16 990₽</p>
+        <div class="product-wrapper-right">
+
+            <div class="product-inner">
+                <img class="stars" src="./assets/img/stars.png" alt="stars">
+                <p class="text-default big">Динс Velvet Yellow</p>
+                <p class="text-default title">Диваны</p>
+
+                <div class="product-price">
+                    <p class="text-default big">4 690₽</p>
+                    <button>Купить</button>
+                    <img src="./assets/img/wishlist-icon.png" alt="wishlist">
+                    <p class="text-default subtitle">Добавить в желаемое</p>
                 </div>
-            </div>
-    
-            <div class="catalog-inner">
-                <div class="catalog-inner-product">
-                    <img class="wishlist-icon" src="./assets/img/wishlist-icon.png" alt="wishlist">
-                    <img src="./assets/img/main-bed.png" alt="bed">
-                    <h2 class="text-default title">Шерона Barhat Grey</h2>
-                    <h3 class="text-default subtitle">Двухспальные кровати</h3>
-                    <p class="text-default price">21 990₽</p>
+                    
+                <div class="product-specifications">
+                    <p class="text-default subtitle">Цвет</p>
+                    <p class="text-default subtitle">Количество</p>
+                    <p class="text-default subtitle">Размер (Д × Ш × В)</p>
                 </div>
-    
-                <div class="catalog-inner-product">
-                    <img class="wishlist-icon" src="./assets/img/wishlist-icon.png" alt="wishlist">
-                    <img src="./assets/img/main-buffet.png" alt="buffet">
-                    <h2 class="text-default title">Авиньон-1</h2>
-                    <h3 class="text-default subtitle">Буфеты</h3>
-                    <p class="text-default price">18 990₽</p>
+
+                <div class="product-characteristic">
+                    <div class="yellow"></div>
+                    <div class="arrow"></div>
+                    <p class="amount">1</p>
+                    <div class="arrow"></div>
+                    <p class="sizes">218 СМ × 95 СМ × 90 СМ</p>
+                    <div class="arrow"></div>
                 </div>
-    
-                <div class="catalog-inner-product">
-                    <img class="wishlist-icon" src="./assets/img/wishlist-icon.png" alt="wishlist">
-                    <img src="./assets/img/main-dresser-1.png" alt="dresser">
-                    <h2 class="text-default title">Стелла Дуб Сонома</h2>
-                    <h3 class="text-default subtitle">Комоды</h3>
-                    <p class="text-default price">8 990₽</p>
-                </div>
-    
-                <div class="catalog-inner-product">
-                    <img class="wishlist-icon" src="./assets/img/wishlist-icon.png" alt="wishlist">
-                    <img src="./assets/img/main-dresser-2.png" alt="dresser">
-                    <h2 class="text-default title">Равенна-1 Light</h2>
-                    <h3 class="text-default subtitle">Комоды</h3>
-                    <p class="text-default price">14 990₽</p>
-                </div>
-            </div>
-    
-            <div class="catalog-inner">
-                <div class="catalog-inner-product">
-                    <img class="wishlist-icon" src="./assets/img/wishlist-icon.png" alt="wishlist">
-                    <img src="./assets/img/main-table.png" alt="table">
-                    <h2 class="text-default title">Бенфлит Grey</h2>
-                    <h3 class="text-default subtitle">Журнальные столы</h3>
-                    <p class="text-default price">7 290₽</p>
-                </div>
-    
-                <div class="catalog-inner-product">
-                    <img class="wishlist-icon" src="./assets/img/wishlist-icon.png" alt="wishlist">
-                    <img src="./assets/img/main-desk.png" alt="desk">
-                    <h2 class="text-default title">Тиффани Вудлайн Крем</h2>
-                    <h3 class="text-default subtitle">Письменные столы</h3>
-                    <p class="text-default price">10 990₽</p>
-                </div>
-    
-                <div class="catalog-inner-product">
-                    <img class="wishlist-icon" src="./assets/img/wishlist-icon.png" alt="wishlist">
-                    <img src="./assets/img/main-wardrobe-1.png" alt="wardrobe">
-                    <h2 class="text-default title">Валенсия Beige</h2>
-                    <h3 class="text-default subtitle">Шкафы</h3>
-                    <p class="text-default price">19 990₽</p>
-                </div>
-    
-                <div class="catalog-inner-product">
-                    <img class="wishlist-icon" src="./assets/img/wishlist-icon.png" alt="wishlist">
-                    <img src="./assets/img/main-wardrobe-2.png" alt="wardrobe">
-                    <h2 class="text-default title">Лайт-3-170-240 Белый</h2>
-                    <h3 class="text-default subtitle">Шкафы</h3>
-                    <p class="text-default price">27 290₽</p>
-                </div>
-            </div>
-    
-            <div class="catalog-inner">
-                <div class="catalog-inner-product">
-                    <img class="wishlist-icon" src="./assets/img/wishlist-icon.png" alt="wishlist">
-                    <img src="./assets/img/main-pink-sofa.png" alt="pink-sofa">
-                    <h2 class="text-default title">Вилли Pink</h2>
-                    <h3 class="text-default subtitle">Детский диван</h3>
-                    <p class="text-default price">21 990₽</p>
-                </div>
-    
-                <div class="catalog-inner-product">
-                    <img class="wishlist-icon" src="./assets/img/wishlist-icon.png" alt="wishlist">
-                    <img src="./assets/img/main-beige-sofa.png" alt="beige-sofa">
-                    <h2 class="text-default title">Сан-Паулу Velvet Brown</h2>
-                    <h3 class="text-default subtitle">Детский диван</h3>
-                    <p class="text-default price">25 990₽</p>
-                </div>
-    
-                <div class="catalog-inner-product">
-                    <img class="wishlist-icon" src="./assets/img/wishlist-icon.png" alt="wishlist">
-                    <img src="./assets/img/main-rack-1.png" alt="rack">
-                    <h2 class="text-default title">Валенсия Beige</h2>
-                    <h3 class="text-default subtitle">Стеллажи</h3>
-                    <p class="text-default price">10 990₽</p>
-                </div>
-    
-                <div class="catalog-inner-product">
-                    <img class="wishlist-icon" src="./assets/img/wishlist-icon.png" alt="wishlist">
-                    <img src="./assets/img/main-rack-2.png" alt="rack">
-                    <h2 class="text-default title">Валенсия Beige</h2>
-                    <h3 class="text-default subtitle">Стеллажи</h3>
-                    <p class="text-default price">19 990₽</p>
-                </div>
-            </div>
-    
-            <div class="catalog-inner">
-                <div class="catalog-inner-product">
-                    <img class="wishlist-icon" src="./assets/img/wishlist-icon.png" alt="wishlist">
-                    <img src="./assets/img/main-bed.png" alt="bed">
-                    <h2 class="text-default title">Шерона Barhat Grey</h2>
-                    <h3 class="text-default subtitle">Двухспальные кровати</h3>
-                    <p class="text-default price">21 990₽</p>
-                </div>
-    
-                <div class="catalog-inner-product">
-                    <img class="wishlist-icon" src="./assets/img/wishlist-icon.png" alt="wishlist">
-                    <img src="./assets/img/main-buffet.png" alt="buffet">
-                    <h2 class="text-default title">Авиньон-1</h2>
-                    <h3 class="text-default subtitle">Буфеты</h3>
-                    <p class="text-default price">18 990₽</p>
-                </div>
-    
-                <div class="catalog-inner-product">
-                    <img class="wishlist-icon" src="./assets/img/wishlist-icon.png" alt="wishlist">
-                    <img src="./assets/img/main-dresser-1.png" alt="dresser">
-                    <h2 class="text-default title">Стелла Дуб Сонома</h2>
-                    <h3 class="text-default subtitle">Комоды</h3>
-                    <p class="text-default price">8 990₽</p>
-                </div>
-    
-                <div class="catalog-inner-product">
-                    <img class="wishlist-icon" src="./assets/img/wishlist-icon.png" alt="wishlist">
-                    <img src="./assets/img/main-dresser-2.png" alt="dresser">
-                    <h2 class="text-default title">Равенна-1 Light</h2>
-                    <h3 class="text-default subtitle">Комоды</h3>
-                    <p class="text-default price">14 990₽</p>
-                </div>
-            </div>
-    
-            <div class="catalog-inner">
-                <div class="catalog-inner-product">
-                    <img class="wishlist-icon" src="./assets/img/wishlist-icon.png" alt="wishlist">
-                    <img src="./assets/img/main-table.png" alt="table">
-                    <h2 class="text-default title">Бенфлит Grey</h2>
-                    <h3 class="text-default subtitle">Журнальные столы</h3>
-                    <p class="text-default price">7 290₽</p>
-                </div>
-    
-                <div class="catalog-inner-product">
-                    <img class="wishlist-icon" src="./assets/img/wishlist-icon.png" alt="wishlist">
-                    <img src="./assets/img/main-desk.png" alt="desk">
-                    <h2 class="text-default title">Тиффани Вудлайн Крем</h2>
-                    <h3 class="text-default subtitle">Письменные столы</h3>
-                    <p class="text-default price">10 990₽</p>
-                </div>
-    
-                <div class="catalog-inner-product">
-                    <img class="wishlist-icon" src="./assets/img/wishlist-icon.png" alt="wishlist">
-                    <img src="./assets/img/main-wardrobe-1.png" alt="wardrobe">
-                    <h2 class="text-default title">Валенсия Beige</h2>
-                    <h3 class="text-default subtitle">Шкафы</h3>
-                    <p class="text-default price">19 990₽</p>
-                </div>
-    
-                <div class="catalog-inner-product">
-                    <img class="wishlist-icon" src="./assets/img/wishlist-icon.png" alt="wishlist">
-                    <img src="./assets/img/main-wardrobe-2.png" alt="wardrobe">
-                    <h2 class="text-default title">Лайт-3-170-240 Белый</h2>
-                    <h3 class="text-default subtitle">Шкафы</h3>
-                    <p class="text-default price">27 290₽</p>
-                </div>
-            </div>
-    
-            <div class="catalog-inner">
-                <div class="catalog-inner-product">
-                    <img class="wishlist-icon" src="./assets/img/wishlist-icon.png" alt="wishlist">
-                    <img src="./assets/img/main-pink-sofa.png" alt="pink-sofa">
-                    <h2 class="text-default title">Вилли Pink</h2>
-                    <h3 class="text-default subtitle">Детский диван</h3>
-                    <p class="text-default price">21 990₽</p>
-                </div>
-    
-                <div class="catalog-inner-product">
-                    <img class="wishlist-icon" src="./assets/img/wishlist-icon.png" alt="wishlist">
-                    <img src="./assets/img/main-beige-sofa.png" alt="beige-sofa">
-                    <h2 class="text-default title">Сан-Паулу Velvet Brown</h2>
-                    <h3 class="text-default subtitle">Детский диван</h3>
-                    <p class="text-default price">25 990₽</p>
-                </div>
-    
-                <div class="catalog-inner-product">
-                    <img class="wishlist-icon" src="./assets/img/wishlist-icon.png" alt="wishlist">
-                    <img src="./assets/img/main-rack-1.png" alt="rack">
-                    <h2 class="text-default title">Валенсия Beige</h2>
-                    <h3 class="text-default subtitle">Стеллажи</h3>
-                    <p class="text-default price">10 990₽</p>
-                </div>
-    
-                <div class="catalog-inner-product">
-                    <img class="wishlist-icon" src="./assets/img/wishlist-icon.png" alt="wishlist">
-                    <img src="./assets/img/main-rack-2.png" alt="rack">
-                    <h2 class="text-default title">Валенсия Beige</h2>
-                    <h3 class="text-default subtitle">Стеллажи</h3>
-                    <p class="text-default price">19 990₽</p>
+
+                <div class="product-description">
+                    <p class="text-default subtitle">Описание</p>
+                    <p class="text-default checkbox">Лаконичные линии и простые формы, безупречный стиль и индивидуальность – все это диван «Динс». 
+                        Сдержанный скандинавский дизайн украсит любую современную обстановку. Элегантность, комфорт и
+                        функциональность, собранные воедино – «Динс» просто создан для размеренного отдыха в кругу 
+                        семьи или компании друзей!</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="footer-wrapper">
+    <section class="description-wrapper">
 
-        <div class="navigation text-default">Навигация</div>
-
-        <div class="footer-container">
-            <div class="footer-wrapper-left">
-                <div class="text-default">Кухни</div>
-                <div class="text-default">Спальни</div>
-                <div class="text-default">Гостинные</div>
-                <div class="text-default">Прихожие</div>
-                <div class="text-default">Офисная мебель</div>
-                <div class="text-default">Детская</div>
-                <div class="text-default">Шкафы</div>
-                <div class="text-default">Матрасы</div>
-                <div class="text-default">Мягкая мебель</div>
-            </div>
-
-            <div class="footer-wrapper-right">
-                <form action="./main.html">
-                    <button class="text-default title">lm</button> 
-                </form> 
-
-                <form action="./contacts.html">
-                    <button class="text-default subtitle"> г. Анапа, Анапское шоссе, 
-                    30 Ж/К Черное море</button>
-                </form>
-            </div>
-        </div>
-
-        <div class="footer-wrapper-bottom">
-
-            <div class="text-default colortext">Акция</div>
-            <div class="text-default">Новинки</div>
-
-            <div class="footer-contacts">
-                <img src="./assets/img/phone-icon-black.png" alt="phone">
-                <p class="text-default phone">8 (964) 89 99 119</p>
-
-                <i class="fab fa-instagram"></i>
-                <p class="text-default inst">instagram</p>
-
-                <i class="far fa-envelope"></i>
-                <p class="text-default">mebel_loft_anapa@mail.ru</p>
-            </div>
-        </div>
-    </footer>
+    </section>
 </body>
 </html>
