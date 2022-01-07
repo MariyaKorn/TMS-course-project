@@ -510,3 +510,323 @@
         }
     }
 }
+
+.description-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 130px 0 130px;
+
+    .description-inner-top {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        height: 30px;
+        cursor: pointer;
+
+        .blue {
+            border-bottom: 3px solid $main-bg;
+        }
+    }
+
+    .description-inner {
+        display: flex;
+        flex-direction: row;
+        margin-top: 27px;
+        margin-bottom: 90px;
+        gap: 116px;
+
+        .description-inner-info {
+            display: flex;
+            flex-direction: column;
+            gap: 23px;
+
+            .info-item {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: flex-end;
+                gap: 10px;
+
+                .dots {
+                    border-bottom: 1px dashed #686868;
+
+                    &.size {
+                        width: 226px;
+                    }
+
+                    &.sleep {
+                        width: 168px;
+                    }
+
+                    &.seat {
+                        width: 152px;
+                    }
+
+                    &.frame {
+                        width: 229px;
+                    }
+
+                    &.mechanism {
+                        width: 208px;
+                    }
+
+                    &.material {
+                        width: 166px;
+                    }
+
+                    &.pillows {
+                        width: 134px;
+                    }
+
+                    &.box {
+                        width: 174px;
+                    }
+
+                    &.USB {
+                        width: 104px;
+                    }
+
+                    &.cover {
+                        width: 172px;
+                    }
+
+                    &.decor {
+                        width: 114px;
+                    }
+
+                    &.delivery {
+                        width: 156px;
+                    }
+
+                    &.manufacturer {
+                        width: 173px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.bestsellers {
+    padding: 0 130px;
+
+    .catalog-products {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 42px;
+        margin-top: 56px;
+    
+        .catalog-inner {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+
+            button {
+                border: none;
+                background: transparent;
+                cursor: pointer;
+            }
+    
+            .catalog-inner-product {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 263px;
+                padding: 20px;
+                background-color: #FFF;
+    
+                .wishlist-icon {
+                    width: 17.5px;
+                    height: 15px;
+                    margin-left: auto;
+                    margin-bottom: 38px;
+                    cursor: pointer;
+                }
+    
+                .text-default {
+                    align-self: flex-start;
+    
+                    &.title {
+                        margin-top: 54px;
+                        margin-bottom: 6px;
+                        font-weight: 500;
+                        cursor: pointer;
+                    }
+    
+                    &.subtitle {
+                        font-size: 11px;
+                        color: $primary-text;
+                        margin-bottom: 9px;
+                        cursor: pointer;
+                    }
+    
+                    &.price {
+                        font-weight: 500;
+                        margin-bottom: 32px;
+    
+                        span {
+                            text-decoration: line-through;
+                            color: #CCCCCC;
+                            font-size: 12px;
+                            font-weight: 500;
+                            margin-left: 6px;
+                        }
+                    }
+                }
+    
+                .sale-wrapper {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 160px;
+    
+                    .sale-inner {
+                        display: flex;
+                        flex-direction: row;
+    
+                        .sale-icon {
+                            width: 17.5px;
+                            height: 15px;
+                            margin-bottom: 38px;
+                            margin-right: 7px;
+                        }
+        
+                        .text-default {
+                            font-size: 12px;
+                            color: #000;
+                            margin-bottom: 38px;
+                        }
+                    }
+                }
+    
+                .info {
+                    display: none;
+                }
+    
+                &:hover {
+                    box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.11);
+                    transition:all 200ms ease-in-out 0s;
+                    transform: scale(1.2);
+                    cursor: pointer;
+                }
+    
+                &:hover .info {
+                    display: block;
+                }
+            }
+        }
+    }    
+}
+
+.footer-wrapper {
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.03);
+    margin-bottom: 34px;
+    margin-top: 10px;
+
+        .navigation {
+            padding: 54px 120px 0 140px;
+            margin-bottom: 10px;
+            
+            &.text-default {
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: 500;
+                color: #000;
+            }
+        }
+
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        padding: 0 120px 0 140px;
+        margin-bottom: 25px;
+
+        .footer-wrapper-left {
+            width: 384px;
+            height: 75px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            .text-default {
+                font-size: 14px;
+                margin-bottom: 7px;
+                margin-right: 50px;
+                cursor: pointer;
+            }
+        }
+
+        .footer-wrapper-right {
+            width: 171px;
+            height: 125px;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: -30px;
+            right: 120px;
+
+            .text-default {
+                &.title {
+                    font-size: 42px;
+                    font-weight: 900;
+                    color: #000;
+                    text-transform: uppercase;
+                    margin-left: 113px;
+                    margin-bottom: 20px;
+                    cursor: pointer;
+                }
+
+                &.subtitle {
+                    font-size: 14px;
+                    text-align: end;
+                    cursor: pointer;
+                }
+            }
+
+            button {
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .footer-wrapper-bottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding: 0 120px 0 140px;
+
+        .text-default {
+            font-size: 14px;
+            cursor: pointer;
+
+            &.inst {
+                text-transform: uppercase;
+            }
+        }
+
+        .footer-contacts {
+            display: flex;
+            flex-direction: row;
+            margin-left: auto;
+
+            img, i {
+                margin-right: 10px;
+            }
+
+            .phone, .inst {
+                margin-right: 30px;
+            }
+        }
+    }
+}
