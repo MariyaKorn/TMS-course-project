@@ -452,6 +452,7 @@
     .header-wrapper {
         height: 100px;
         padding: 0 25px;
+        justify-content: space-around;
     
         .logo {
             width: 100px;
@@ -598,6 +599,7 @@
     .header-wrapper {
         padding: 0 15px;
         flex-direction: column;
+        height: 106px;
     
         .icons {
             margin-left: 155px;
