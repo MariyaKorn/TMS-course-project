@@ -581,7 +581,7 @@
             align-items: center;
             gap: 25px;
             margin-bottom: 20px;
-            overflow: hidden;
+            justify-content: space-around;
     
             .search-wrapper {
                 img {
@@ -727,6 +727,7 @@
                 margin-left: 155px;
                 order: 2;
                 position: absolute;
+                top: 30px;
             }
         }
     
