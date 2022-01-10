@@ -582,19 +582,19 @@
             padding: 30px 22px 0 24px;
         }
 
-    .footer-container {
-        padding: 0 24px;
+        .footer-container {
+            padding: 0 24px;
 
-        .footer-wrapper-right {
-            top: -70px;
-            right: 25px;
+            .footer-wrapper-right {
+                top: -70px;
+                right: 25px;
+            }
+        }
+
+        .footer-wrapper-bottom {
+            padding: 0 24px;
         }
     }
-
-    .footer-wrapper-bottom {
-        padding: 0 24px;
-    }
-}
 }
 
 @media only screen and (max-width:320px) {
@@ -606,6 +606,7 @@
             margin: 40px 0 35px 15px;
         }
     }
+    
     .header-wrapper {
         padding: 10px 15px;
         flex-direction: column;
