@@ -4,11 +4,7 @@
   
   "scripts": {
     "start": "parcel",
-    "build": "parcel build",
-    "copy:assets": "cp -r assets/* dist",
-    "copy:scss": "cp -r scss/* dist",
-    "copy:html": "find src -name '*.html' -type f -exec cp {} dist \\;",
-    "copy": "npm run copy:assets && npm run copy:html && npm run copy:scss"
+    "build": "parcel build"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.0.1",
